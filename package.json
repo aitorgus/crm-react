@@ -1,7 +1,10 @@
 {
   "name": "crm-react",
+   "homepage": "https://github.com/AGCG1991/crm-react",
   "version": "0.0.0",
   "scripts": {
+     "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview"
