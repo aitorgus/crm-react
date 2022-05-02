@@ -1,80 +1,20 @@
 {
   "clientes": [
     {
-      "id": 1,
-      "nombre": "Juan"
-    },
-    {
-      "nombre": "Aitor",
-      "empresa": "Portfolio",
-      "email": "aitor.gustavo@gmail.com",
-      "telefono": "6788116930",
-      "notas": "cliente recomendado",
+      "nombre": "Aitor Gustavo",
+      "empresa": "Accenture",
+      "email": "correo@correo.com",
+      "telefono": "129918398193",
+      "notas": "El Cliente solicita un servidor",
       "id": 2
     },
     {
-      "nombre": "Aitor",
-      "empresa": "Portfolio",
-      "email": "aitor.gustavo@gmail.com",
-      "telefono": "6788116930",
-      "notas": "cliente recomendado",
-      "id": 4
-    },
-    {
-      "nombre": "Aitor",
-      "empresa": "Portfolio",
-      "email": "aitor.gustavo@gmail.com",
-      "telefono": "6788116930",
-      "notas": "cliente recomendado",
-      "id": 5
-    },
-    {
-      "nombre": "Karen",
-      "empresa": "KarenDiseño",
-      "email": "karen@karen.com",
-      "telefono": "12340",
-      "notas": "karen esta cotizando toner",
-      "id": 6
-    },
-    {
-      "nombre": "Aitor",
-      "empresa": "Portfolio",
-      "email": "aitorgustavocamachogutierrez@gmail.com",
-      "telefono": "678811690",
-      "notas": "adfs",
-      "id": 7
-    },
-    {
-      "nombre": "Aitor",
-      "empresa": "Portfolio",
-      "email": "aitorgustavocamachogutierrez@gmail.com",
-      "telefono": "678811690",
-      "notas": "dsfadsf",
-      "id": 8
-    },
-    {
-      "nombre": "Aitor",
-      "empresa": "Portfolio",
-      "email": "aitorgustavocamachogutierrez@gmail.com",
-      "telefono": "678811690",
-      "notas": "Prueba",
-      "id": 9
-    },
-    {
-      "nombre": "Aitor",
-      "empresa": "Portfolio",
-      "email": "aitorgustavocamachogutierrez@gmail.com",
-      "telefono": "678811690",
-      "notas": "123",
-      "id": 10
-    },
-    {
-      "nombre": "Aitor",
-      "empresa": "Portfolio",
-      "email": "aitorgustavocamachogutierrez@gmail.com",
-      "telefono": "678811690",
-      "notas": "dasdfadf",
-      "id": 11
+      "nombre": "Juan",
+      "empresa": "Indra",
+      "email": "correo@correo.com",
+      "telefono": "9183981398139",
+      "notas": "",
+      "id": 2
     }
   ]
 }

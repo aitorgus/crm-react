@@ -5,23 +5,25 @@ import Inicio from './paginas/Inicio'
 import NuevoCliente from './paginas/NuevoCliente'
 import EditarCliente from './paginas/EditarCliente'
 import VerCliente from './paginas/VerCliente'
+
+
 function App() {
 
 
   return (
-    <BrowserRouter>
-      <Routes> {/*Grupo de Rutas */}
-          <Route path="/clientes" element={<Layout />}> {/*Masterpage de Inicio */}
-          <Route index element={<Inicio />}></Route>
-          {/*Como se encuentra bajo un Grupo de rutas, la ruta quedaría tal que /clientes/nuevo */}
-          <Route path="nuevo" element={<NuevoCliente />}></Route>
-          {/*El id es dinámico, no tenemos que crear una ruta por cada cliente distinto */}
-          <Route path="editar/:id" element={<EditarCliente />}></Route>
-           <Route path=":id"element={<VerCliente/>}></Route>
-          </Route>
-        
-      </Routes>
-    </BrowserRouter>
+      <BrowserRouter>
+          <Routes>{/*Grupo de Rutas */}
+              <Route path="/clientes" element={<Layout />}> {/*Masterpage de Inicio */}
+                  <Route index element={<Inicio />} />
+                  {/*Como se encuentra bajo un Grupo de rutas, la ruta quedaría tal que /clientes/nuevo */}
+                  <Route path="nuevo" element={<NuevoCliente />} />
+                            {/*El id es dinámico, no tenemos que crear una ruta por cada cliente distinto */}
+
+                  <Route path="editar/:id" element={<EditarCliente />} />
+                  <Route path=":id" element={<VerCliente />} />
+              </Route>
+          </Routes>
+      </BrowserRouter>
   )
 }
 
