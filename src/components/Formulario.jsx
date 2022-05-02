@@ -1,9 +1,14 @@
 import React from 'react'
 import { Formik, Form, Field } from 'formik'
+import {useNavigate} from 'react-router-dom'
 import * as Yup from 'yup'
 import Alerta from './Alerta'
 
 const Formulario = () => {
+
+
+const navigate = useNavigate()
+
 {/*
 .min(minimo, mensaje) -> Establecemos un mínimo para el campo y el mensaje de aviso en caso de que sea menor a este
 .required() -> Establecemos que el campo es requerido
@@ -27,8 +32,32 @@ const Formulario = () => {
             .typeError('El teléfono debe ser un número'),
                   notas: ''
     })
-    const handleSubmit = (valores) => {
-              console.log(valores)
+
+    {/*
+    Por defecto fetch() utiliza un método GET, pero podemos cambiarlo con el método .method(), en este caso tenemos que hacer uso de POST 
+    Tenemos que pasarle el objeto con los datos que queremos enviar, en este caso el objeto con los datos del cliente (se lo pasamos convirtiéndolo en un JSON)
+    además le añadimos una cabecera (en algunos casos, en el header, se le añade la autentificacón del usuario)
+*/}
+    const handleSubmit = async (valores) => {
+        try {
+            const url = 'http://localhost:4000/clientes'
+            
+            const respuesta = await fetch(url, { 
+                method: 'POST',
+                body: JSON.stringify(valores),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            console.log(respuesta)
+            const resultado = await respuesta.json()
+            console.log(resultado)
+            navigate('/clientes')
+
+        } catch (error) { 
+            console.log(error)
+        }
+
           }
 
     return (
@@ -36,6 +65,7 @@ const Formulario = () => {
           <h1 className='text-gray-600 font-bold text-xl uppercase text-center'>Agregar Cliente</h1>
 
             {/* Dentro de Formik, initialValues{{ }} crea un objeto, los cuales deben coincidir con el name de los Field , a su vez el Form esta dentro de una función de flecha. */}
+               {/* En onSubmit, queda a la espera de que se ejecute handleSubmit y luego reseteamos el formulario, llamando a resetForm*/}
           <Formik
               
               initialValues={{
@@ -45,9 +75,11 @@ const Formulario = () => {
                   telefono: '',
                   notas: ''
 
-              }}
-              onSubmit={(values) => {
-                  handleSubmit(values)
+                }}
+             
+              onSubmit={async (values, {resetForm}) => {
+                 await handleSubmit(values)
+                  resetForm()
                 }}
                 validationSchema={nuevoClienteSchema}
           >
