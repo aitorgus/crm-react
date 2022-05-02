@@ -4,6 +4,7 @@ import Layout from './layout/Layout'
 import Inicio from './paginas/Inicio'
 import NuevoCliente from './paginas/NuevoCliente'
 import EditarCliente from './paginas/EditarCliente'
+import VerCliente from './paginas/VerCliente'
 function App() {
 
 
@@ -15,7 +16,8 @@ function App() {
           {/*Como se encuentra bajo un Grupo de rutas, la ruta quedaría tal que /clientes/nuevo */}
           <Route path="nuevo" element={<NuevoCliente />}></Route>
           {/*El id es dinámico, no tenemos que crear una ruta por cada cliente distinto */}
-          <Route path="editar/:id"element={<EditarCliente/>}></Route>
+          <Route path="editar/:id" element={<EditarCliente />}></Route>
+           <Route path=":id"element={<VerCliente/>}></Route>
           </Route>
         
       </Routes>
