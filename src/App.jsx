@@ -5,14 +5,19 @@ import Inicio from './paginas/Inicio'
 import NuevoCliente from './paginas/NuevoCliente'
 import EditarCliente from './paginas/EditarCliente'
 import VerCliente from './paginas/VerCliente'
+import {useNavigate} from 'react-router-dom'
 
 
 function App() {
 
 
-  return (
+    return (
+      
+        <>
+    
       <BrowserRouter>
-          <Routes>{/*Grupo de Rutas */}
+                <Routes>{/*Grupo de Rutas */}
+                    <Route path="/"  element={<Layout />}></Route>
               <Route path="/clientes" element={<Layout />}> {/*Masterpage de Inicio */}
                   <Route index element={<Inicio />} />
                   {/*Como se encuentra bajo un Grupo de rutas, la ruta quedaría tal que /clientes/nuevo */}
@@ -24,6 +29,8 @@ function App() {
               </Route>
           </Routes>
       </BrowserRouter>
+</>
+        
   )
 }
 
