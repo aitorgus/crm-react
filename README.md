@@ -1,3 +1,5 @@
+[![pages-build-deployment](https://github.com/AGCG1991/crm-react/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/AGCG1991/crm-react/actions/workflows/pages/pages-build-deployment)
+
 # CRM PARA EL CONTROL DE CLIENTES: 
 
 # Instalación: 
