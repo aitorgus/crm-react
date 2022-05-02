@@ -1,14 +1,10 @@
 module.exports = {
-  content: [
-  
-    './public/**/*.html',
-    './src/**/*.{js,jsx,ts,tsx,vue}',
+  purge: [
+      './src/**/*.js'
   ],
   theme: {
     extend: {},
   },
-  variants: {
-    extend: {},
-  },
+  variants: {},
   plugins: [],
 }
