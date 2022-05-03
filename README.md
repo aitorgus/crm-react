@@ -41,7 +41,7 @@ Una vez instalada las dependencias, podemos arrancar nuestro proyecto
 
 `npm run dev `
 
-Desde el navegador introducimos " http://localhost:3000/ " para poder visualizar el proyecto en local.
+Desde el navegador introducimos " http://localhost:3000/crm-react " para poder visualizar el proyecto en local.
 
 # Mas información: 
 
@@ -79,3 +79,5 @@ En este proyecto, ha sido necesario construir una APi, para realizar las peticio
 Para arrancar el servidor , una vez incrustado el fichero en nuestro proyecto:
 
 `json-server --watch db.json --port 4000 `
+
+
