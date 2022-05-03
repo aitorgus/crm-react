@@ -17,8 +17,8 @@ function App() {
     
       <BrowserRouter>
                 <Routes>{/*Grupo de Rutas */}
-                    <Route path="/"  element={<Layout />}></Route>
-              <Route path="/clientes" element={<Layout />}> {/*Masterpage de Inicio */}
+                    <Route path="/crm-react/"  element={<Layout />}></Route>
+              <Route path="/crm-react/clientes" element={<Layout />}> {/*Masterpage de Inicio */}
                   <Route index element={<Inicio />} />
                   {/*Como se encuentra bajo un Grupo de rutas, la ruta quedaría tal que /clientes/nuevo */}
                   <Route path="nuevo" element={<NuevoCliente />} />
