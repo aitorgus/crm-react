@@ -1,8 +1,28 @@
 [![pages-build-deployment](https://github.com/AGCG1991/crm-react/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/AGCG1991/crm-react/actions/workflows/pages/pages-build-deployment)
 
 # CRM PARA EL CONTROL DE CLIENTES: 
+Con este proyecto, podremos gestionar clientes, añadiéndolos mediante un formulario con validación.
+
+ <p align="center">
+   <img height="400em" src="https://github.com/AGCG1991/AGCG1991.github.io/blob/master/img/CRM-AGREGAR%20CLIENTE.PNG" />
+</p>
+
+Desde la sección de clientes, podremos ver una tabla resumen con el Nombre del  cliente, teléfono y correo de contacto, la empresa a la que pertenece o representa el cliente, además, dispondremos de 3 opciones, visualizar los datos completos del cliente, editar esos datos y eliminarlos.
+
+ <p align="center">
+   <img height="400em" src="https://github.com/AGCG1991/AGCG1991.github.io/blob/master/img/CRM-Clientes.PNG" />
+</p>
+
+ <p align="center">
+   <img height="400em" src="https://github.com/AGCG1991/AGCG1991.github.io/blob/master/img/CRM-Visualizar%20clientes.PNG" />
+</p>
+
+ <p align="center">
+   <img height="400em" src="https://github.com/AGCG1991/AGCG1991.github.io/blob/master/img/CRM-EditarClientes.PNG" />
+</p>
 
 
+Link: https://agcg1991.github.io/crm-react/
 # Instalación: 
 
 En primer lugar debes de clonar tu proyecto en local  
