@@ -16,11 +16,11 @@ const Layout = () => {
                    
                     <Link 
                         className={`${urlActual === '/clientes' ? 'text-blue-300' : 'text-white'} text-2xl block mt-2 hover:text-blue-300`}
-                        to="/clientes"
+                        to="/crm-react/clientes"
                     >Clientes</Link>
                     <Link 
                          className={`${urlActual === '/clientes/nuevo' ? 'text-blue-300' : 'text-white'} text-2xl block mt-2 hover:text-blue-300`}
-                        to="/clientes/nuevo"
+                        to="/crm-react/clientes/nuevo"
                     >Nuevo Cliente</Link>
                 </nav>
             </div>

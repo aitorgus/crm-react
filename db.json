@@ -1,20 +1,20 @@
 {
   "clientes": [
     {
-      "nombre": "Aitor Gustavo",
-      "empresa": "Accenture",
-      "email": "correo@correo.com",
-      "telefono": "129918398193",
-      "notas": "El Cliente solicita un servidor",
-      "id": 1
-    },
-    {
       "nombre": "Juan",
       "empresa": "Indra",
       "email": "correo@correo.com",
       "telefono": "9183981398139",
       "notas": "",
       "id": 2
+    },
+    {
+      "nombre": "Aitor Gustavo",
+      "empresa": "Accenture",
+      "email": "prueba@prueba.es",
+      "telefono": "123456",
+      "notas": "Probando despligue en githubpages",
+      "id": 3
     }
   ]
 }

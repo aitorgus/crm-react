@@ -64,7 +64,7 @@ const Formulario = ({cliente, cargando}) => {
             }
 
             await respuesta.json()
-            navigate('/clientes')
+            navigate('/crm-react/clientes')
         } catch (error) {
             console.log(error)
         }
