@@ -31,8 +31,11 @@ He utilizado react route (v6) , para instalarlo en el proyecto utilizamos :
 
 ` react-route-dom`
 
-Para su uso en nuestro proyecto debemos importarlo utilizando
+
+Para su uso en nuestro proyecto debemos importarlo utilizando:
+
 ` import { BrowserRouter, Routes, Route } from 'react-router-dom' `
+
 
 
 # Formularios :
@@ -40,10 +43,13 @@ Para su uso en nuestro proyecto debemos importarlo utilizando
 Se ha utilizado la librería Formik, que cuenta con herramientas de validación de formularios. Para instalarlo en nuestro proyecto usaremos: 
 
 `npm i formik-yup` 
+
 Para importarlo, simplemente utilizaremos en nuestro proyecto 
+
 `import { Formik, Form, Field } from 'formik'`
 
-Para validar los formularios utilizamos 'YUP', el cual lo importamos utilizando: 
+Para validar los formularios utilizamos 'YUP', el cual lo importamos utilizando:
+
 `import * as Yup from 'yup'`
 
 En este proyecto, ha sido necesario construir una APi, para realizar las peticiones hemos instalado un servidor JSON. Para instalarlo, haremos una instalación global , elevando permisos como Administrador:
