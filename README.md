@@ -94,7 +94,8 @@ El caso del fichero con la variable de entorno para producción es ' .env.produc
 
 Ejemplo de uso de una variable de entorno :
 
-`
+```
+
 useEffect(() => {
         const obtenerClienteAPI = async () => {
             try {
@@ -110,4 +111,4 @@ useEffect(() => {
         }
         obtenerClienteAPI()
     }, [])
-`
+```
