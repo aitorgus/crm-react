@@ -81,3 +81,33 @@ Para arrancar el servidor , una vez incrustado el fichero en nuestro proyecto:
 `json-server --watch db.json --port 4000 `
 
 
+# Otras consideraciones:
+
+A la hora de desplegar este proyecto en github, han surgido algunas problemáticas, entre ellas, el acceso al servidor JSON. Una vez desplegada, no puede acceder a este, debido a que es local, es por ello que se han utilizado dos ficheros adicionales de configuración, los cuales cuentan con variables de entorno.
+
+El primero de ellos, llamado ' .env.development.local' , en caso de ser desplegado en local, hará peticiones al servidor local, en caso contrario, usará el servidor de producción.
+`VITE_API_URL=http://localhost:4000/clientes`
+
+El caso del fichero con la variable de entorno para producción es ' .env.production.local '  :
+
+`VITE_API_URL=https://my-json-server.typicode.com/AGCG1991/crm-react/clientes `
+
+Ejemplo de uso de una variable de entorno :
+
+`
+useEffect(() => {
+        const obtenerClienteAPI = async () => {
+            try {
+                const url = `${import.meta.env.VITE_API_URL}/${id}`
+                const respuesta = await fetch(url)
+                const resultado = await respuesta.json()
+                setCliente(resultado)
+            } catch (error) {
+                console.log(error)
+            }
+            setCargando(!cargando)
+
+        }
+        obtenerClienteAPI()
+    }, [])
+`
