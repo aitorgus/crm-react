@@ -1,12 +1,10 @@
 module.exports = {
-
-  purgue: ["index.html", "./src/**/*.jsx"],
-  content: ["index.html", "./src/**/*.{js,jsx,ts,tsx}"],
+content: [
+    // Example content paths...
+    './public/**/*.html',
+    './src/**/*.{js,jsx,ts,tsx,vue}',
+  ],
   theme: {
-    extend: {},
-  },
-  variants: {
-    extend: {},
-  },
-  plugins: [],
 }
+    
+  }

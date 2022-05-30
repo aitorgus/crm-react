@@ -30,7 +30,7 @@ const Inicio = () => {
                     method: 'DELETE'
                 })
                 await respuesta.json()
-
+                    {/*Al usar cliente.id !== id , me traigo todos aquellos elementos que no estoy eliminando. De esta manera , luego actualizo el valor de setClientes */}
                 const arrayClientes = clientes.filter( cliente => cliente.id !== id)
                 setClientes(arrayClientes)
             } catch (error) {
